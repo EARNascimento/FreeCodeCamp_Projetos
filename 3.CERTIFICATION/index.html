@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale="1.0">
+  <title>Club Penguin Survey Form</title>
+<head/>
+<body>
+  <h1 id="title">
+    Club Penguin 2 Survey Form
+  </h1>
+  <p id="description">Your anwsers will be analyzed by our team, they don't count as correct anwers, all of you will be ramdomly picked up. </p>
+  <form id="survey-form">
+  <div class="form-group">
+    <label name="name-label" for="name" id="name-label" > Nickname
+      <input 
+        type="text" 
+        id="name" 
+        required
+        placeholder="Enter your best nickname"
+     />
+    <label>
+  </div>
+  <div class="form-group">
+    <label id="email-label" for="email"> E-mail
+      <input
+        type="email"
+        id="email"
+        required
+        placeholder="Enter your e-mail"
+      />
+    </label>
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number">Age
+      <span class="clue">(optional)</span>
+      <input
+        type="number"
+        id="number"
+        min="13"
+        max="99"
+        placeholder="Enter your age"
+      />
+    </label>
+  </div>
+  <div class="form-group">
+    <p>Select an option that better defines you expercience with the game</p>
+    <select id="dropdown">
+      <option disabled selected option>Select an option</option>
+      <option value="beginner">
+        Beginner (I know a little about the game)
+      </option>
+      <option value="intermediate">
+        Intermediate (I know some places, some characters and that's all)
+      </option>
+        <option value="experienced">
+        Experienced (I know how to enter on EPF, I had some autograph and I know how to catch the big fish).
+      </option>
+    <select>
+  </div>
+  </form>
+</body>
+</html>
