@@ -17,11 +17,20 @@ header {
   width: 100%;
   background-color: #1b1b32;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+
+main{
+  padding-top: 27px;
 }
 
 h1,
@@ -60,6 +69,11 @@ nav {
 nav > ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
 }
 
 nav > ul > li {
@@ -69,6 +83,17 @@ nav > ul > li {
   display: block;
 }
 
+a{
+  text-decoration: none;
+}
+
+nav > ul > li:hover{
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
 li > a{
-  color: #dfdfe2;
+  color: inherit;
+  text-decoration: none;
   }
