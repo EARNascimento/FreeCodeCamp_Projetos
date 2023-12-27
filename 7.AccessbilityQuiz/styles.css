@@ -162,7 +162,7 @@ p {
 
 /*Dessa forma você targeta o elemento p e escreve antes (before) dele, com o content você especifica o que vai ser escrito antes.*/
 p::before {
-  content: "Question #";
+  content: "Questão #";
 }
 
 nav {
