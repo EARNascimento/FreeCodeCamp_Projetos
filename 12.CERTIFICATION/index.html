@@ -3,18 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>HTML Documentation</title>
   </head>
   <body>
     <nav id="navbar">
       <header>HTML</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#HTML_Basico">HTML Basico</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Anatomia_de_um_elemento_HTML"
+            >Anatomia de um elemento HTML</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Atributos">Atributos</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Aninhando_elementos"
+            >Aninhando Elementos</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Elementos_vazios">Elementos Vazios</a>
+        </li>
+      </ul>
     </nav>
 
     <main id="main-doc">
-      <section class="main-section" id="html-basico">
-        <header>
-          <h1>HTML Basico</h1>
-        </header>
+      <section class="main-section" id="HTML_Basico">
+        <header>HTML Basico</header>
         <p>
           HTML (Linguagem de Marcação de Hipertexto) é o código que você usa
           para estruturar uma página web e seu conteúdo. Por exemplo, o conteúdo
@@ -45,8 +65,8 @@
         </code>
       </section>
 
-      <section class="main-section" id="anatomia-de-um-elemento-html">
-        <header><h1>Anatomia de um elemento HTML</h1></header>
+      <section class="main-section" id="Anatomia_de_um_elemento_HTML">
+        <header>Anatomia de um elemento HTML</header>
         <p>As principais partes de um elemento são:</p>
         <ol>
           <li>
@@ -73,7 +93,7 @@
         </ol>
       </section>
 
-      <section class="main-section" id="atributos">
+      <section class="main-section" id="Atributos">
         <header>Atributos</header>
         <p>
           Atributos contém informação extra sobre o elemento que você não quer
@@ -97,12 +117,40 @@
         </ol>
       </section>
 
-      <section class="main-section">
-        <header></header>
+      <section class="main-section" id="Aninhando_elementos">
+        <header>Aninhando Elementos</header>
+        <p>
+          Você pode colocar elementos dentro de outros elementos também — isso é
+          chamado de aninhamento. Se quiséssemos afirmar que nosso gato é muito
+          mal-humorado, poderíamos envolver a palavra "muito" em um
+          elemento<code>&lt;strong&gt;</code>, o que significa que a palavra
+          deve ser fortemente enfatizada:
+        </p>
+        <code
+          >&lt;p&gt; Meu gatinho é &lt;strong&gt; muito &lt; strong /&gt; mal
+          humorado. &lt;p/&gt;
+        </code>
       </section>
 
-      <section class="main-section">
-        <header></header>
+      <section id="Elementos_vazios" class="main-section">
+        <header>Elementos Vazios</header>
+        <p>
+          Alguns elementos não possuem conteúdo e são chamados de elementos
+          vazios. Considere o elemento &lt;<code>img</code>&gt; que temos na
+          nossa página HTML:
+        </p>
+
+        &lt;img src="imagem.png" alt="imagem de teste"/&gt;
+
+        <p>
+          Ele contém dois atributos, mas não há tag <code>&lt;/img&gt;</code> de
+          fechamento, e não há conteúdo interno. Isso acontece porque um
+          elemento de imagem não envolve conteúdo para ter efeito em si mesmo.
+        </p>
+        <p>
+          Sua proposta é incorporar uma imagem na página HTML no lugar que o
+          código aparece.
+        </p>
       </section>
     </main>
   </body>
